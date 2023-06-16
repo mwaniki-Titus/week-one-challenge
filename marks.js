@@ -1,5 +1,5 @@
 function calculateGrade() 
-//Prompt the user to input student marks
+//Prompt the user to input students marks
 const mark = parseInt(prompt("Enter the student's mark (between 0 and 100):"));
  
     let grade="";
