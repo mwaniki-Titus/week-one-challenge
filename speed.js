@@ -3,9 +3,16 @@ function calculateDemeritPoints(speed) {
     const kmPerDemeritPoints=5;
     const maxDemeritPoints=20;
 
-    if (speesd<speedLimit){
+    if (speed<speedLimit){
         console.log("ok");
         return;
     }
-    const 
+}
+    const demeritPoints = ((speed-speedLimit) /kmPerDemeritPoints);{
+
+    if(demeritPoints>maxDemeritPoints){
+        console.log("license suspended");
+    }else{
+        console.log( demeritPoints);
+    }
 }
