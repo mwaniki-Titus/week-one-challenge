@@ -4,10 +4,10 @@ const mark = parseInt(prompt("Enter the student's mark (between 0 and 100):"));
  
     let grade="";
 
-  if(marks>100 || marks <0 (user))
+  if(marks>100 || marks <0 (marks)){
          grade ="invalid input"; 
          
-else if(marks>79){
+ }else if(marks>79){
     grade='A';
 
 }else if(marks>=60){
@@ -19,4 +19,4 @@ else if(marks>79){
 }else{
     grade='E'
 }
-console.log(grade);
+console.log("The student's grade is:"+grade);
