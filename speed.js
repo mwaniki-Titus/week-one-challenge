@@ -8,7 +8,7 @@ function calculateDemeritPoints(speed) {
         return;
     }
 }
-    const demeritPoints = ((speed-speedLimit) /kmPerDemeritPoints);{
+    const demeritPoints =Math.floor ((speed-speedLimit) /kmPerDemeritPoints);{
 
     if(demeritPoints>maxDemeritPoints){
         console.log("license suspended");
