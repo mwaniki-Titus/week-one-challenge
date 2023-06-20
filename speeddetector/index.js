@@ -1,20 +1,26 @@
 //calculates demerit points
-function calculateDemeritPoints(speed) {
+function calculateDemeritPoints() {
     const speedLimit=80;
-    const kmPerDemeritPoints=5;
+    const kmPerDemeritPoint=5;
     const maxDemeritPoints=20;
 
-    if (speed<speedLimit){
-        console.log("ok");
+    const speed =parseFloat(prompt("Enter the vehicle speed:"));
+    
+    if(isNaN(speed)){
+        console.log("Invalid input. Please enter a valid number.");
+    }
+
+    if (speed < speedLimit){
+        console.log("OK");
         return;
     }
-}
-    const demeritPoints = Math.floor ((speed-speedLimit) /kmPerDemeritPoints);{
 
-    if(demeritPoints>maxDemeritPoints){
+    const demeritPoints = Math.floor ((speed - speedLimit) / kmPerDemeritPoint);
+
+    if(demeritPoints > maxDemeritPoints) {
         console.log("license suspended");
-    }else{
-        console.log( demeritPoints);
+    } else {
+        console.log(demeritPoints);
     }
 }
-console.log(calculateDemeritPoints());
+calculateDemeritPoints();
